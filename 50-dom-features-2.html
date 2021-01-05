@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var exc = function (){
+            var leftDiv = document.getElementById('left');
+            console.log("child element count: " + leftDiv.childElementCount);
+        }
+    </script>
+</head>
+<body onload="exc();">
+    <div id="left">
+        <h3>Menu</h3>
+        <ul>
+            <li>m1</li>
+            <li>m2</li>
+            <li>m3</li>
+            <li>m4</li>
+        </ul>
+    </div>
+</body>
+</html>

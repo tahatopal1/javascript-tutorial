@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function process(){
+            var count = document.getElementById('colors').length;
+            for (var i = 0; i < count; i++){
+                if (document.getElementById('colors').options[i].selected == true)
+                    alert(document.getElementById('colors').options[i].text);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="frm">
+        Select a color: <br/>
+        <select id="colors" name="s1" multiple>
+            <option>Red</option>
+            <option>Blue</option>
+            <option selected>White</option>
+            <option>Purple</option> <br/>
+        </select>
+        <input type="button" value="Your choice: " onclick="process();"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var storage = window.localStorage;
+        storage.clear(); // we cleared it because we added some date in previous sample
+        console.log("Current length:".concat(storage.length));
+
+        storage.setItem('A','Firefox');
+        storage.setItem('B','Opera');
+
+        console.log("Length after adding data:".concat(storage.length));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

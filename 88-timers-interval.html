@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #wrt{
+            border-style: solid;
+            width: 100px;
+            height: 100px;
+            font-size: 70px;
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        var i_time = 0;
+        var time;
+
+        function count(){
+            document.getElementById('wrt').textContent = i_time;
+            i_time++;
+        }
+
+        function start(){
+            time = window.setInterval("count()", 1000);
+            document.getElementById('btnStart').disabled = true;
+            document.getElementById('btnStart').value = "Continue >>";
+            document.getElementById('btnStop').disabled = false;
+        }
+
+        function stop(){
+            document.getElementById('btnStart').disabled = false;
+            document.getElementById('btnStop').disabled = true;
+            window.clearInterval(time);
+        }
+
+        function g1(){
+            document.getElementById('btnStart').disabled = false;
+            document.getElementById('btnStop').disabled = false;
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="wrt"></div><br/>
+    <input id="btnStart" type="button" value="start >>" onclick="start();"/>
+    <input id="btnEnd" type="button" value="stop >>" onclick="stop();"/>
+</body>
+</html>

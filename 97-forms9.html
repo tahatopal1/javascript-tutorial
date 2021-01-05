@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function process(){
+            var count = document.getElementById('sit').length;
+            var arr = new Array();
+            for (var i = 0; i < count; i++)
+                arr[i] = document.getElementById('sit').options[i].text;
+            alert(arr);
+        }
+    </script>
+</head>
+<body>
+    <form id="frm">
+        Education: <br/>
+        <select id="sit" name="n1">
+            <option>High School</option>
+            <option selected>Bachelor's Degree</option>
+            <option>Master's Degree</option>
+        </select>
+        <input type="button" value="Show the options" onclick="process();"/>
+    </form>
+</body>
+</html>

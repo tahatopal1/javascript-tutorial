@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function fun(){
+
+            document.body.addEventListener("click", fun1, true);
+            document.body.addEventListener("click", fun1, false);
+
+            document.getElementById('top').addEventListener("click", fun2, true);
+            document.getElementById('top').addEventListener("click", fun2, false);
+
+            document.getElementById('bottom').addEventListener("click", fun3);
+
+        }
+
+        function fun1(){
+            console.log("<body> element / click event");
+        }
+
+        function fun2(){
+            console.log("<div id = 'top'> element / click event");
+        }
+
+        function fun3(){
+            console.log("<div id = 'bottom'> element / click event");
+        }
+
+    </script>
+</head>
+<body onload="fun();">
+    <div id="top">
+        <div id="bottom">
+            Click !
+        </div>
+    </div>
+</body>
+</html>

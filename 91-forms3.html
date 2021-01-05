@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function begin(){
+            var select = document.getElementById('colors');
+            var optionCollection = select.options;
+
+            for (var i = 0; i < optionCollection.length; i++)
+                console.log(optionCollection.item(i).textContent);
+
+        }
+    </script>
+</head>
+<body onload="begin();">
+    <form>
+        <select id="colors">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>White</option>
+            <option>Purple</option>
+        </select>
+    </form>
+</body>
+</html>

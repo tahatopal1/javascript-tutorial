@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var start = function (){
+            var element = document.getElementById("con");
+            console.log("context of div element: " + element.textContent);
+            element.textContent = "New Context !!!";
+            console.log("Result: ".concat(element.textContent));
+        }
+    </script>
+</head>
+<body onload="start();">
+    <div id="con">
+        <h2>Element</h2>
+        <span>innerHTML</span><br/>
+    </div>
+</body>
+</html>

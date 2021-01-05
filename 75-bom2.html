@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function open_page(){
+            var str = "location=no, menubar=no, toolbar=no, status=no, resizable=no, width=300, height=100";
+            var new_page = window.open("", "", str);
+            new_page.document.writeln("This page has just created!");
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript:" onclick="open_page()">Open the page!</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var init = function (){
+            // Using querySelector with 2 params
+            // Searches first param. If not found, searches the second one
+            var elDiv = document.querySelector("#div1,.p1");
+            var elP = document.querySelector(".p2,.p3");
+            alert(elDiv.id + "\n" + elP.className);
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div id="div1">
+        <p>HTML5</p>
+        <p class="p1">DOM LEVEL 2</p>
+        <p class="p3">DOM LEVEL 3</p>
+    </div>
+</body>
+</html>

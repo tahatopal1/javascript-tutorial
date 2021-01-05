@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            width: 200px;
+            border: 1px solid gray;
+            height: 100px;
+            padding: 2px;
+            margin: 1px;
+            overflow: scroll;
+        }
+    </style>
+    <script type="text/javascript">
+        var start = function (){
+            console.log("offsetHeight: " + document.querySelector('div').offsetHeight);
+            console.log("offsetWidth: " + document.querySelector('div').offsetWidth);
+        }
+    </script>
+</head>
+<body onload="start();">
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum euismod quam a sollicitudin.<br/>
+        Pellentesque varius mattis nulla, in volutpat lectus porttitor sed. In hac habitasse platea dictumst.
+    </div>
+</body>
+</html>

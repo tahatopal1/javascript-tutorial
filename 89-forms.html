@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var _load = function (){
+            var formElement = document.querySelector("form[name='form1']");
+            var formLength  = formElement.length;
+            var formList    = formElement.elements;
+
+            for (var i = 0; i < formLength; i++)
+                console.log(formList[i]);
+        }
+    </script>
+</head>
+<body onload="_load();">
+    <form action="" name="form1">
+        Username: <input type="text"/> <br/>
+        Password: <input type="text"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>

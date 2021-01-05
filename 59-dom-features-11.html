@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function start(){
+            var clone = document.getElementById('el').cloneNode(true);
+            document.body.appendChild(clone);
+        }
+    </script>
+</head>
+<body onload="start();">
+    <div id="el">
+        First paragraph.
+        <p>
+            Second paragraph. <span> Third paragraph.</span>
+        </p>
+    </div>
+</body>
+</html>

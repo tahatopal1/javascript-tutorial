@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        var init = function (){
+            var staticNodeList  = document.querySelectorAll('.div');
+            var dynamicNodeList = document.getElementsByClassName('div');
+
+            console.log("element count of staticNodeList: "  + staticNodeList.length);
+            console.log("element count of dynamicNodeList: " + dynamicNodeList.length);
+
+            // Let's add a div into page
+
+            var div = document.createElement('div');
+            div.textContent = 'Div 4';
+            div.className = 'div';
+            document.body.appendChild(div);
+
+            // Printing the lists again
+
+            console.log("----------------------------");
+            console.log("element count of staticNodeList: "  + staticNodeList.length);
+            console.log("element count of dynamicNodeList: " + dynamicNodeList.length);
+        }
+
+    </script>
+</head>
+<body onload="init();">
+    <div class="div">Div 1</div>
+    <div class="div">Div 2</div>
+    <div class="div">Div 3</div>
+</body>
+</html>

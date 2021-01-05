@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    </style>
+    <script type="text/javascript">
+        var init = function (){
+            var nList = document.querySelectorAll('div.dom p');
+            for (var i = 0; i < nList.length; i++)
+                console.log("P" + (i+1) + " context: " + nList.item(i).textContent);
+            var nList2 = document.querySelectorAll('div.dom span');
+            console.log("Element count of nList2: " + nList2.length);
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div class="dom">
+        <p>Dom Level 1</p>
+        <p>Dom Level 2</p>
+        <p>Dom Level 3</p>
+    </div>
+</body>
+</html>

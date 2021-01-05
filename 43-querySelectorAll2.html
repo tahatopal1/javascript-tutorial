@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+        var init = function (){
+            var nList = document.querySelectorAll('div.dom p');
+            console.log("element count inside nList: " + nList.length);
+            var div = document.querySelector('.dom');
+            var p   = document.createElement('p');
+            p.textContent = 'Dom Level 4';
+            div.appendChild(p);
+            console.log('A new p element has been added inside div element.')
+            console.log("element count inside nList: " + nList.length); // Length will not change, still prints 3 (static NodeList)
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div class="dom">
+        <p>Dom Level 1</p>
+        <p>Dom Level 2</p>
+        <p>Dom Level 3</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function test() {
+            var str = document.getElementById("txt").value;
+            var dEx = /^[A-Z0-9a-z_.-]+@[A-Z0-9a-z]+\.[a-zA-Z]{2,3}$/g;
+
+            if (!dEx.test(str))
+                alert("Please enter a valid e-mail address!");
+
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt" />
+    <input type="button" value="EmailTest" onclick="test()" />
+</body>
+</html>

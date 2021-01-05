@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function load_page(){
+            var str = document.getElementById('txt1').value;
+            str = "http://".concat(str);
+            window.location.assign(str);
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1"/>
+    <a href="javascript:;" onclick="load_page();">Load page into window</a>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        try{
+            var numb1 = prompt('Enter the first number');
+            var numb2 = prompt('Enter the second number');
+            var error = new Object();
+            error.message = "result: 0";
+            error.longMessage = "One of the numbers or both took 0 value";
+            if (numb1 == 0 || numb2 == 0)
+                throw(error);
+            alert("Multiplication result: ".concat(numb1 * numb2));
+        }catch (err){
+            alert(err.message.concat("\n", err.longMessage));
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

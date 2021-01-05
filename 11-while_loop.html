@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var number = prompt('Enter a number!');
+        if(number > 2){
+            var numberMax = Math.floor(Math.sqrt(number));
+            var numberInit = 2;
+            var result = "This is a prime number";
+
+            while (numberInit <= numberMax){
+                if(number % numberInit == 0){
+                    result = 'This is not a prime number';
+                    break;
+                }
+                numberInit++;
+            }
+
+            document.writeln(result);
+
+        }else
+            document.writeln("0, 1 or negative integers cannot be prime");
+
+    </script>
+</head>
+<body>
+</body>
+</html>

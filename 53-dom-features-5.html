@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function exc(){
+            var div = document.getElementById('left');
+            console.log("1-".concat(div.firstChild.textContent)); // Returns node
+            console.log("2-".concat(div.lastChild.textContent));  // Returns node
+
+            console.log("3-".concat(div.firstElementChild.textContent)); // Returns element
+            console.log("4-".concat(div.lastElementChild.textContent));  // Returns element
+
+            var p = document.getElementById('middle');
+            console.log("5-".concat(p.nextSibling.textContent)); // Returns node
+            console.log("6-".concat(p.previousSibling.textContent)); // Returns node
+
+            console.log("7-".concat(p.nextElementSibling.textContent)); // Returns element
+            console.log("8-".concat(p.previousElementSibling.textContent)); // Returns element
+
+            console.log("9-".concat(p.parentNode));
+            console.log("10-".concat(p.parentElement.id));
+
+
+        }
+    </script>
+</head>
+<body onload="exc();">
+    <div id="left">
+        <div id="first">JavaScript</div>
+        <p id="middle">HTML5</p>
+        <p id="last">CSS</p>
+    </div>
+</body>
+</html>

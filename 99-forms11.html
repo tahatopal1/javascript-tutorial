@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function wrt(){
+            var txt = prompt("The content: ", "");
+            if (txt == "" || txt == null){
+                document.getElementById('txtarea').value = "TextArea Content"
+                return;
+            }
+
+            document.getElementById('txtarea').value = txt;
+
+        }
+    </script>
+</head>
+<body>
+    <form id="frm">
+        <textarea id="txtarea" rows="4" cols="20"></textarea> <br/>
+        <input type="button" value="writeContext" onclick="wrt();"/>
+    </form>
+</body>
+</html>

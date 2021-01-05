@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #target{
+            height: 100px;
+            width:  100px;
+            border: 1px solid crimson;
+            background-color: beige;
+        }
+    </style>
+    <script>
+        var init = function (){
+            var div = document.getElementById('target');
+            div.onclick = function (event){
+                console.log(event.target)
+            }
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div id="target">
+        Click!
+    </div>
+</body>
+</html>

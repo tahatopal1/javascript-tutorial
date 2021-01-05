@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var init = function (){
+            // catch div referans has id of 'html5'
+            var div1 = document.querySelector('#html5');
+
+            // catch the span element that is child of div element whose id is 'html5'
+            var span =  document.querySelector('#html5>span');
+
+            // catch the div element comes after the element has id of 'html5'
+            var div2 = document.querySelector('#html5+div');
+
+            // catch the p element inside the div element has id of 'content'
+            var p = document.querySelector('div#content p');
+
+            div1.style.backgroundColor = "#FFB300";
+            span.style.backgroundColor = "#00CC00";
+            div2.style.backgroundColor = "#CD0074";
+            p.style.backgroundColor = "#FF4900";
+
+        }
+    </script>
+</head>
+<body onload="init();">
+    <div id="content">
+        <div id="html5">Java<span>Script</span></div>
+        <div>Java Programming Language</div>
+        <p>javascript</p>
+    </div>
+</body>
+</html>
