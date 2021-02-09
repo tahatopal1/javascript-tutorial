@@ -1,0 +1,10 @@
+{
+  "firstName": "Taha",
+  "lastName": "Topal",
+  "age": 7,
+  "info": ["68","1.68","Black"],
+  "cars": [
+    {"nameCar": "Ford", "models": ["Fiesta", "Focus", "Mustang"]},
+    {"nameCar": "BMW", "models": ["320", "x3", "x5"]}
+  ]
+}

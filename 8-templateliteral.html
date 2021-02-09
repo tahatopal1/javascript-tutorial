@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function populate(){
+            let name = prompt("Please enter your name...");
+            let surname = prompt("Please enter your surname...");
+
+            document.querySelector('#par').innerHTML = `${name} ${surname}`
+        }
+    </script>
+</head>
+<body onload="populate();">
+    <p id="par"></p>
+</body>
+</html>

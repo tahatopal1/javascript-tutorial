@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script>
+    <style type="text/css">
 
+    </style>
+    <script type="text/javascript">
+        function exc(){
+            var leftDiv = document.getElementById('left');
+            var subElements = leftDiv.children;
+            for (var i = 0; i < subElements.length; i++) {
+                console.log(subElements[i]);
+            }
+        }
     </script>
 </head>
-<body>
-
+<body onload="exc();">
+    <div id="left">
+        <h3>Menu</h3>
+        <ul>
+            <li>m1</li>
+            <li>m2</li>
+            <li>m3</li>
+            <li>m4</li>
+        </ul>
+    </div>
 </body>
 </html>

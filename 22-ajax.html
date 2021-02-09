@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript">
+        let fun = () => {
+            let xmlRequest, obj;
+            xmlRequest = new XMLHttpRequest();
+            xmlRequest.onreadystatechange = () => {
+                if (this.readyState === 4 && this.status === 200){
+                    obj = JSON.parse(this.responseText);
+                    console.log(obj["cars"][0]);
+                }
+            }
+
+            xmlRequest.open("GET", "info.json", true);
+            xmlRequest.send();
+
+        }
+    </script>
+</head>
+<body>
+    <button id="btn" onclick="fun();">Click</button>
+</body>
+</html>
